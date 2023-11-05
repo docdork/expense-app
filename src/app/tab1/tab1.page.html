@@ -1,17 +1,66 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title> Create Expense </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title size="large">Create Expense</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-input
+        type="text"
+        fill="solid"
+        label="Expense Type"
+        labelPlacement="floating"
+        helperText="Enter the name of your Expense"
+        errorText="Invalid Text"
+        ngModel
+        email
+      ></ion-input>
+    </ion-item>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-item>
+      <ion-input
+        type="number"
+        fill="solid"
+        label="Amount"
+        labelPlacement="floating"
+        helperText="Enter a valid amount"
+        errorText="Invalid amount"
+        ngModel
+        email
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        type="text"
+        fill="solid"
+        label="Location"
+        labelPlacement="floating"
+        helperText="Enter a valid location"
+        errorText="Invalid location"
+        ngModel
+        email
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        type="text"
+        fill="solid"
+        label="Picture"
+        labelPlacement="floating"
+        helperText="Enter a valid picture"
+        errorText="Invalid picture"
+        ngModel
+        email
+      ></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
